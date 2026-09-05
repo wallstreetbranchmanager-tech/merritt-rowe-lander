@@ -4,13 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Merritt & Rowe, P.A. — Attorney Advertising — Tampa Injury Counsel</title>
-  <meta name="description" content="Attorney Advertising. Demonstration website for a fictional Tampa, Florida firm. Not an offer of legal services. Prior results do not guarantee a similar outcome. Hiring a lawyer is an important decision that should not be based solely on advertisements." />
+  <meta name="description" content="Attorney Advertising. Demonstration website for a fictional Tampa, Florida firm. Prior results do not guarantee a similar outcome. Hiring a lawyer is an important decision that should not be based solely on advertisements." />
   <meta name="theme-color" content="#0c0b09" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<p>Loading full page from deploy… if you see this, refresh after the next commit.</p>
+  <div class="ad-bar">Attorney Advertising · Tampa, Florida</div>
+  <div class="demo-bar">Demonstration site. Merritt & Rowe, P.A., its lawyers, telephone number, street address, and all dollar figures are <strong>fictional</strong>. Not a Florida law firm and not an offer of legal services. Prior results do not guarantee a similar outcome.</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><strong>Merritt & Rowe</strong><span>P.A.</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#practice">Practice</a>
+        <a href="#results">Results</a>
+        <a href="#counsel">Counsel</a>
+        <a href="#consult">Consult</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="phone-pill" href="tel:+18135551212">(813) 555-1212</a>
+        <a class="btn btn-gold" href="#consult">Free review</a>
+      </div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Tampa · Hillsborough · Florida trial work</p>
+          <h1>Hurt in a crash<br>that wasn’t <em>your fault?</em></h1>
+          <p class="lede">On a real firm’s page this line is the client’s problem, not the firm’s slogan. This template is for layout and intake only. Nothing here is a promise of money, a trial win, or representation.</p>
+          <div class="trust-row">
+            <span><b>Contingency</b> injury matters: no attorney fee unless there is a recovery</span>
+            <span><b>Costs</b> may still be the client’s responsibility</span>
+          </div>
+          <p class="disclaimer-box">Attorney Advertising. The hiring of a lawyer is an important decision that should not be based solely upon advertisements. Prior results do not guarantee a similar outcome. No attorney-client relationship is formed by visiting this page or submitting the form. Responsible for this communication: Claire Merritt, Merritt & Rowe, P.A., principal office in Tampa, Florida. 401 E Jackson Street, Suite 2400, Tampa, FL 33602 · (813) 555-1212. If a live firm refers advertised matters to other counsel, that firm must say so here.</p>
+        </div>
+        <aside class="card" id="consult">
+          <h2>Start a free case review</h2>
+          <p class="hint">Three fields. A lawyer calls you back.</p>
+          <form id="intake" novalidate>
+            <div><label for="name">Full name</label><input id="name" name="name" required /></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /></div>
+            <div>
+              <label for="matter">What happened</label>
+              <select id="matter" name="matter" required>
+                <option value="">Select a matter</option>
+                <option>Car / truck crash</option>
+                <option>Motorcycle or rideshare</option>
+                <option>Slip and fall</option>
+                <option>Workplace injury</option>
+                <option>Wrongful death</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div><label for="note">Short version (optional)</label><textarea id="note" name="note"></textarea></div>
+            <button class="btn btn-gold" type="submit" style="width:100%">Request the call</button>
+            <p class="form-status" id="status" role="status"></p>
+            <p class="fine">Submitting this demonstration form does not create an attorney-client relationship. Prior results do not guarantee a similar outcome.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+    <div class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat"><b>Sample</b><span>Not actual recoveries</span></div>
+        <div class="stat"><b>FL</b><span>Template assumes Florida Bar admission</span></div>
+        <div class="stat"><b>Tampa Bay</b><span>Market the page is built to sell</span></div>
+        <div class="stat"><b>Fee</b><span>Contingency only if a real firm says so in writing</span></div>
+      </div>
+    </div>
+    <section id="practice">
+      <div class="wrap">
+        <p class="eyebrow">What we file</p>
+        <h2 class="sec">Practice areas this template is built to sell.</h2>
+        <p class="sub">A live firm must only list work its lawyers are competent and authorized to handle in Florida.</p>
+        <div class="areas">
+          <article class="area"><h3>Motor vehicle</h3><p>Cars, trucks, motorcycles, rideshare.</p></article>
+          <article class="area"><h3>Premises & falls</h3><p>Ice, broken stairs, neglected property.</p></article>
+          <article class="area"><h3>Construction & workplace</h3><p>Falls and third-party jobsite claims.</p></article>
+          <article class="area"><h3>Wrongful death</h3><p>Estate opened. Claim preserved.</p></article>
+          <article class="area"><h3>Criminal & DWI</h3><p>First appearance when the night goes sideways.</p></article>
+          <article class="area"><h3>Family & estates</h3><p>Custody, support, and signed wills.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="results" style="padding-top:0">
+      <div class="wrap">
+        <p class="eyebrow">Selected results</p>
+        <h2 class="sec">Sample result blocks — not real cases.</h2>
+        <p class="disclaimer-box">Prior results do not guarantee a similar outcome.</p>
+        <div class="results">
+          <div class="result"><b>$ —</b><span>Example: vehicle crash, Hillsborough County. Insert only a real matter.</span></div>
+          <div class="result"><b>$ —</b><span>Example: premises claim, Pinellas County. No actors.</span></div>
+          <div class="result"><b>$ —</b><span>Example: motorcycle / UM. Delete any line you cannot prove.</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="counsel">
+      <div class="wrap split">
+        <div class="portrait" aria-hidden="true"><div class="portrait-cap">Use only a photograph of the actual lawyer.</div></div>
+        <div>
+          <p class="eyebrow">Who is responsible for this page</p>
+          <h2 class="sec">Named counsel, office, and phone.</h2>
+          <p class="sub"><strong style="color:#f3eee4">Claire Merritt</strong> — fictional. Responsible for this advertisement.<br>
+          <strong style="color:#f3eee4">Daniel Rowe</strong> — fictional.<br>
+          Principal office city: Tampa, Florida. 401 E Jackson Street, Suite 2400, Tampa, FL 33602. (813) 555-1212.</p>
+          <p style="margin-top:22px"><a class="btn btn-ghost" href="tel:+18135551212">Call (813) 555-1212</a></p>
+        </div>
+      </div>
+    </section>
+    <div class="cta-band">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow" style="color:#8a2a22">Last screen</p>
+          <h2 class="sec">A consult is not a guarantee.</h2>
+          <p class="sub">Representation begins only with a signed retainer.</p>
+        </div>
+        <div class="card">
+          <p><a class="btn btn-gold" href="#consult" style="background:#8a2a22;color:#fff">Back to the review form</a></p>
+          <p style="margin-top:14px"><a class="phone-pill" style="color:#8a2a22" href="tel:+18135551212">(813) 555-1212</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="foot-top">
+        <div>
+          <strong>Merritt & Rowe, P.A.</strong> (fictional)<br />
+          Principal office city: Tampa, Florida<br />
+          401 E Jackson Street, Suite 2400, Tampa, FL 33602<br />
+          (813) 555-1212 · intake@merrittrowe.example<br />
+          Responsible lawyer (fictional): Claire Merritt
+        </div>
+        <div>
+          Attorney Advertising.<br />
+          The hiring of a lawyer is an important decision that should not be based solely upon advertisements.<br />
+          Prior results do not guarantee a similar outcome.<br />
+          Rules Regulating The Florida Bar, Chapter 4-7.
+        </div>
+      </div>
+      <p>Demonstration advertisement. Not a Florida law firm. No attorney-client relationship is created by visiting or submitting the form. © 2026 Apex Executive Studio sample.</p>
+    </div>
+  </footer>
+  <div class="sticky-mobile">
+    <a class="btn btn-ghost" href="tel:+18135551212">Call</a>
+    <a class="btn btn-gold" href="#consult">Free review</a>
+  </div>
+  <script>
+    const form = document.getElementById("intake");
+    const status = document.getElementById("status");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.name.value.trim() || !form.phone.value.trim() || !form.matter.value) {
+        status.className = "form-status err";
+        status.textContent = "Name, phone, and matter type are required.";
+        return;
+      }
+      status.className = "form-status";
+      status.textContent = "Got it. Wire this form before launch.";
+      form.reset();
+    });
+  </script>
 </body>
 </html>
