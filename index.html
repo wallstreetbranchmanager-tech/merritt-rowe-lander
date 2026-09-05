@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Merritt & Rowe — Sample Tampa Injury Page</title>
-  <meta name="description" content="Demonstration attorney landing page. Not a real law firm. Not a real attorney." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -13,7 +12,7 @@
     .lic { color: #c6a56c; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 22px; }
     .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
     .cases article { border: 1px solid rgba(198,165,108,.28); border-radius: 18px; overflow: hidden; background: #120f0c; }
-    .cases img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .cases img { width: 100%; height: 220px; object-fit: cover; display: block; background: #1a1713; }
     .cases h3 { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 500; padding: 18px 20px 6px; }
     .cases p { color: #b7ae9f; padding: 0 20px 22px; }
     @media (max-width: 900px) { .cases { grid-template-columns: 1fr; } }
@@ -35,7 +34,7 @@
       <div class="hero-copy">
         <p class="kicker">Demonstration page · Not legal services</p>
         <h1>The adjuster already has a number. <em>Get a better one.</em></h1>
-        <p class="lede">Sample copy for a Tampa injury lander. Claire Merritt does not exist. She is not licensed. This page cannot take your case.</p>
+        <p class="lede">Sample copy. Claire Merritt does not exist. She is not licensed. This page cannot take your case.</p>
         <p class="lic">Florida Bar No. DEMO-000000 · Not admitted · Not a real attorney</p>
         <div class="hero-actions">
           <a class="btn primary" href="#consult">Free case review</a>
@@ -43,7 +42,7 @@
         </div>
       </div>
       <figure class="hero-shot">
-        <img src="claire.jpg" alt="AI-generated portrait of fictional counsel Claire Merritt" width="560" height="840" />
+        <img data-pic="claire" alt="AI portrait of fictional counsel Claire Merritt" width="360" height="540" />
         <figcaption>AI portrait · Fictional counsel · Not a licensed attorney</figcaption>
       </figure>
     </section>
@@ -52,17 +51,17 @@
       <h2>What this sample is built to sell.</h2>
       <div class="cases">
         <article>
-          <img src="crash.jpg" alt="AI-generated crash scene" />
+          <img data-pic="crash" alt="AI crash scene" />
           <h3>Crashes</h3>
-          <p>Generated image. Not a real wreck we handled.</p>
+          <p>Generated image. Not a real wreck.</p>
         </article>
         <article>
-          <img src="fall.jpg" alt="AI-generated wet floor scene" />
+          <img data-pic="fall" alt="AI wet floor scene" />
           <h3>Falls</h3>
           <p>Generated image. Not a real premises file.</p>
         </article>
         <article>
-          <img src="jobsite.jpg" alt="AI-generated construction site" />
+          <img data-pic="jobsite" alt="AI construction site" />
           <h3>Jobsite</h3>
           <p>Generated image. Not a real construction claim.</p>
         </article>
@@ -72,7 +71,7 @@
       <div>
         <p class="kicker">Who this person is not</p>
         <h2>Claire Merritt is a prop.</h2>
-        <p class="body">Not a member of The Florida Bar. License number DEMO-000000 is invented so the layout has a place for a real number.</p>
+        <p class="body">Not a member of The Florida Bar. License number DEMO-000000 is invented.</p>
       </div>
       <blockquote>
         This page is a design sample. It is not counsel.
@@ -115,10 +114,11 @@
     <a class="on" href="#consult">Review</a>
   </div>
   <script>
-    document.getElementById("intake").addEventListener("submit", (e) => {
+    document.getElementById("intake").addEventListener("submit", function (e) {
       e.preventDefault();
       document.getElementById("status").textContent = "Sample only. No attorney will call.";
     });
   </script>
+  <script src="pics.js"></script>
 </body>
 </html>
