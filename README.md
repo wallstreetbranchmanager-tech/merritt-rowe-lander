@@ -1,2 +1,5 @@
-# merritt-rowe-lander
-Merritt &amp; Rowe P.A. fictional Tampa attorney landing page — Apex Executive Studio sample
+# Merritt & Rowe, P.A. — sample attorney lander
+
+Fictional Tampa, Florida injury firm. Demonstration only. Phone (813) 555-1212.
+
+Apex Executive Studio.
