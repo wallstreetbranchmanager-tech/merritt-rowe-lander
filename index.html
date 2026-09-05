@@ -9,12 +9,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
-    .cases article { border: 1px solid rgba(198,165,108,.28); border-radius: 18px; overflow: hidden; background: #120f0c; }
+    .cases, .awards, .quotes { display: grid; gap: 18px; margin-top: 36px; }
+    .cases { grid-template-columns: repeat(3, 1fr); }
+    .awards { grid-template-columns: repeat(4, 1fr); }
+    .quotes { grid-template-columns: 1fr 1fr; }
+    .cases article, .quote { border: 1px solid rgba(198,165,108,.28); border-radius: 18px; overflow: hidden; background: #120f0c; }
     .cases img { width: 100%; height: 220px; object-fit: cover; display: block; background: #1a1713; }
     .cases h3 { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 500; padding: 18px 20px 6px; }
-    .cases p { color: #b7ae9f; padding: 0 20px 22px; }
-    @media (max-width: 900px) { .cases { grid-template-columns: 1fr; } }
+    .cases p, .quote p { color: #b7ae9f; padding: 0 20px 22px; }
+    .award { text-align: center; padding: 22px 12px; border: 1px solid rgba(198,165,108,.28); border-radius: 18px; }
+    .award b { display: block; color: #c6a56c; font-family: "Cormorant Garamond", serif; font-size: 22px; font-weight: 500; }
+    .award span { color: #9a9186; font-size: 13px; }
+    .quote { padding: 28px 24px 8px; }
+    .quote p { font-family: "Cormorant Garamond", serif; font-size: 24px; line-height: 1.2; color: #efe8dc; font-style: italic; }
+    .quote cite { display: block; padding: 0 20px 22px; color: #9a9186; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; font-style: normal; }
+    @media (max-width: 900px) {
+      .cases, .awards, .quotes { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -23,7 +34,7 @@
     <a class="logo" href="#top">Merritt <em>&</em> Rowe</a>
     <nav>
       <a href="#work">Work</a>
-      <a href="#claire">Counsel</a>
+      <a href="#awards">Results</a>
       <a href="#consult">Review</a>
     </nav>
     <a class="tel" href="tel:+18135551212">813.555.1212</a>
@@ -63,6 +74,34 @@
           <h3>Jobsite</h3>
           <p>Falls from height and third-party negligence. If we cannot help, we say so.</p>
         </article>
+      </div>
+    </section>
+    <section id="awards" class="wrap block">
+      <p class="kicker">Sample honors</p>
+      <h2>Awards the page is built to hold.</h2>
+      <div class="awards">
+        <div class="award"><b>AV Preeminent</b><span>Peer rating · sample</span></div>
+        <div class="award"><b>Super Lawyers</b><span>Rising Star · sample</span></div>
+        <div class="award"><b>The National Trial Lawyers</b><span>Top 40 Under 40 · sample</span></div>
+        <div class="award"><b>Million Dollar Advocates</b><span>Forum · sample</span></div>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>“She called the same night. The adjuster stopped talking to me after that.”</p>
+          <cite>M. Alvarez · Tampa</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“I thought the first offer was the file. It was not.”</p>
+          <cite>J. Patel · St. Petersburg</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“No billboard voice. Just Claire, and a plan.”</p>
+          <cite>R. Nguyen · Brandon</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“They had the police report. She had the rest.”</p>
+          <cite>D. Brooks · Clearwater</cite>
+        </blockquote>
       </div>
     </section>
     <section id="claire" class="split wrap block">
